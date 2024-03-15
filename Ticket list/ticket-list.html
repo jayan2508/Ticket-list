@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket List</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="table-list.css">
+</head>
+
+<body>
+    <div>
+        <!-- Ticket Table -->
+        <div class="container">
+            <h2>Ticket List</h2>
+            <table class="table table-bordered">
+                <thead>
+                    <tr class="tr">
+                        <th>NO.</th>
+                        <th>NAME</th>
+                        <th>TICKET ID</th>
+                        <th>LATEST MESSAGE</th>
+                        <th>ASSIGNED</th>
+                        <th>PRIORITY</th>
+                        <th>STATUS</th>
+                        <th>ACTION</th>
+                    </tr>
+                </thead>
+                <tbody id="ticketList">
+                    <!-- Tickets will be dynamically added here using JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <script src="ticket-list.js"></script>
+</body>
+</html>

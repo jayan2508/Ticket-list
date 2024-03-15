@@ -1,0 +1,127 @@
+body {
+    background-color: rgb(196, 196, 196);
+
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    /* border: 3px solid #dee2e6; */
+    padding: 20px !important;
+    border-radius: 10px;
+    /* position: relative; */
+    background-color: white;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+h2 {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+}
+
+.tr {
+    background-color: rgb(246, 246, 246);
+    color: grey;
+}
+
+/* CSS for priority badges */
+.priority-badge {
+    font-size: 10px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.high-priority {
+    border: 2px solid red;
+    background-color: rgb(255, 212, 212);
+    color: red;
+}
+
+.medium-priority {
+    border: 2px solid #8ca051;
+    background-color: rgb(252, 252, 177);
+    color: #8ca051;
+}
+
+.low-priority {
+    border: 2px solid blue;
+    background-color: rgb(230, 230, 255);
+    color: blue;
+}
+
+td {
+    vertical-align: inherit !important;
+}
+
+/* Badge Styles */
+.blue-badge {
+    border: 2px solid rgb(0, 174, 255);
+    background-color: rgb(213, 242, 255);
+    color: rgb(0, 174, 255);
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.green-badge {
+    border: 2px solid #93a458;
+    background-color: #f3fdca;
+    color: #93a458;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.red-badge {
+    border: 2px solid #c07b9a;
+    background-color: #ffdbeb;
+    color: #c07b9a;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.black-badge {
+    border: 2px solid green;
+    background-color: rgb(226, 255, 226);
+    color: green;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+button {
+    padding: 0px 6px !important;
+    background-color: rgb(218, 218, 218) !important;
+    border: 1px solid grey !important;
+    color: grey !important;
+}
+
+.profile-photo {
+    width: 40px;
+    height: 40px;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    font-size: 18px;
+    /* font-weight: bold; */
+}
+
+.watch {
+    width: 30px;
+    padding: 5px;
+}
+
+td:nth-child(1),
+td:nth-child(3),
+td:nth-child(5),
+td:nth-child(7),
+.description-cell {
+    color: grey;
+}
+
+strong {
+    color: black;
+}

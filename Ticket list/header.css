@@ -1,0 +1,441 @@
+header {
+    color: black;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+button#addTicketButton {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+button#addTicketButton:hover {
+    background-color: #848383;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    background-color: #1f1f1f;
+    box-shadow: rgba(255, 255, 255, 0.4) 0px 2px 4px, rgba(255, 255, 255, 0.3) 0px 7px 13px -3px, rgba(255, 255, 255, 0.2) 0px -3px 0px inset;
+    color: white;
+    margin: 1% auto;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+    width: 60%;
+    height: 86%;
+    overflow: auto;
+}
+
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+.close:hover {
+    color: white;
+}
+
+form {
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: black;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.back-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    margin: 0px;
+    background-color: rgb(239, 239, 239);
+    font-family: 'Poppins', sans-serif;
+}
+
+#editModalContent {
+    overflow: auto;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+.add-btn {
+    border-radius: 5px;
+}
+
+h1 {
+    /* font-family: 'Poppins', sans-serif; */
+    letter-spacing: 3px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button:hover {
+    background-color: #848383;
+}
+
+/* Define a fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+#ticketModal {
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+/* -----------ticket-list-table----------- */
+
+.container {
+    padding: 20px !important;
+    border-radius: 10px;
+    background-color: white;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    padding: 10px;
+}
+
+.tr {
+    background-color: rgb(246, 246, 246);
+    color: grey;
+    white-space: nowrap;
+}
+
+.priority-badge {
+    font-size: 10px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.high-priority {
+    border: 2px solid red;
+    background-color: rgb(255, 212, 212);
+    color: red;
+}
+
+.medium-priority {
+    border: 2px solid #8ca051;
+    background-color: rgb(252, 252, 177);
+    color: #8ca051;
+}
+
+.low-priority {
+    border: 2px solid blue;
+    background-color: rgb(230, 230, 255);
+    color: blue;
+}
+
+td {
+    vertical-align: inherit !important;
+}
+
+.blue-badge {
+    border: 2px solid rgb(0, 174, 255);
+    background-color: rgb(213, 242, 255);
+    color: rgb(0, 174, 255);
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.green-badge {
+    border: 2px solid #93a458;
+    background-color: #f3fdca;
+    color: #93a458;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.red-badge {
+    border: 2px solid #c07b9a;
+    background-color: #ffdbeb;
+    color: #c07b9a;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.black-badge {
+    border: 2px solid green;
+    background-color: rgb(226, 255, 226);
+    color: green;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.btn-primary {
+    padding: 0px 6px !important;
+    background-color: rgb(218, 218, 218) !important;
+    border: 1px solid grey !important;
+    color: grey !important;
+}
+
+.btn-primary:hover {
+    background-color: #4f4e42 !important;
+    color: white !important;
+}
+
+.profile-photo {
+    width: 40px;
+    height: 40px;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.watch {
+    width: 30px;
+    padding: 5px;
+}
+
+td:nth-child(1),
+td:nth-child(3),
+td:nth-child(5),
+td:nth-child(7),
+.description-cell {
+    color: grey;
+}
+
+strong {
+    color: black;
+}
+
+.text-center {
+    background-color: rgb(251, 58, 58);
+    margin-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.table {
+    width: 100%;
+    overflow: auto;
+}
+
+.main-table {
+    width: 100%;
+    overflow: auto;
+}
+
+option {
+    background-color: black;
+    color: white;
+}
+
+option:hover {
+    background-color: white !important;
+    color: black !important;
+}
+
+.size {
+    height: 0.1px;
+}
+
+.error {
+    color: #ff0000;
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.required::after {
+    content: "*";
+    color: red;
+    margin-left: 5px;
+}
+
+.form-group label {
+    display: flex;
+    align-items: center;
+}
+
+.filter {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-filter {
+    background-color: white;
+    color: black;
+    border: 1px solid rgb(211, 211, 211);
+}
+
+.btn-filter:hover {
+    background-color: #e5e5e5;
+    border: 1px solid black;
+}
+
+.img-filter {
+    width: 20px;
+    margin-left: 10px;
+}
+
+.img-filter-1 {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.close-search {
+    cursor: pointer;
+}
+
+.no-data-message {
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+    color: #9e9e9e;
+}
+
+.no-data-image {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    max-width: 150px;
+}
+
+.search-container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#searchInput {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    transition: width 0.4s ease-in-out;
+    flex-grow: 1;
+    margin-right: 10px;
+    padding: 5px;
+}
+
+.close-container {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.leftright {
+    height: 4px;
+    width: 30px;
+    position: absolute;
+    margin-top: 24px;
+    background-color: grey;
+    border-radius: 2px;
+    transform: rotate(45deg);
+    transition: all .3s ease-in;
+}
+
+.rightleft {
+    height: 4px;
+    width: 30px;
+    position: absolute;
+    margin-top: 24px;
+    background-color: grey;
+    border-radius: 2px;
+    transform: rotate(-45deg);
+    transition: all .3s ease-in;
+}
+
+.close-container:hover .leftright {
+    transform: rotate(-45deg);
+    background-color: black;
+}
+
+.close-container:hover .rightleft {
+    transform: rotate(45deg);
+    background-color: black;
+}
+
+@media (min-width: 768px) {
+    #searchInput {
+        width: 400px;
+    }
+}
